@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vladimir Bonacic</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+          --c:orange;
+          --altura:70vh;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 16px
+        }
+        header{
+            width: 100%;
+            height: 70vh;
+            background: orange;
+            display: flex;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }      
+        header>div{
+            position: relative;
+           width: 50%;
+           height: 70vh;
+        }
+        .bloc_esq{
+            background: purple;
+        }
+        .bloc_esq img{
+            object-fit: cover;
+            object-position: top center;
+            
+        }
+        .bloc_dre{
+            background: pink;
+        }
+        .bloc_dre img{
+            object-fit: cover;
+            object-position: top center;
+        }
+        h1{
+            font-family: 'Abril Fatface', cursive;
+            position: absolute;
+            text-align: center;
+            top: 40vh;
+            font-size: 3vw;
+            width: 100%;
+            color: purple;
+        } 
+        article{
+            font-family: 'Jomolhari', serif;
+            width: 33.4em;
+            margin: auto;
+        }
+        article>p:first-child{
+            padding: 5vw 0;
+            color: var(--c);
+            column-count: 2;
+            column-gap: 30px;
+            text-align: justify;
+            hyphens: auto;
+            line-height: 1.4em;
+            column-rule: 1px solid orange;
+        }
+        article #cos>p:first-child::first-letter{
+            color: orange;
+            font-family: 'Georgia', sans-serif;
+            font-size: 5em;
+            float: left;
+            margin-right: 0.2em;
+            margin-top: -0.35em;
+            margin-bottom: -0.2em;
+            margin-bottom: 0.1em;
+        }
+        article #cos{
+          width: auto;
+          padding: 0 3em; 
+          text-align: justify;
+          hyphens: auto;
+          
+        }
+        article #cos p{
+            padding: 0 0 1.5em 0;
+        }
+        .cercle, .hexagon{
+            background: orange;
+        }
+        .cercle img, .hexagon img{
+            mix-blend-mode: hard-light;
+        }
+        .cercle, .cercle img{
+            border-radius: 50%;
+            
+        }
+        .cercle{
+            max-width: 20em;
+            float: left;
+            margin-left: -8em;
+            shape-margin: 1.5em;
+            shape-outside: circle(50%)border-box;
+        }
+        .hexagon{
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+        }
+        .hexagon{
+            max-width: 20em;
+            float: right;
+            margin-right: -8em;
+            shape-margin: 2em;
+            shape-outside:  polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)border-box;
+        }
+        @media (max-width:600px){
+            body{
+                background: azure;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bloc_esq">
+            <img src=img/Vladimir_Bonacic.jpg >
+        </div>
+        <div class="bloc_dre">
+            <img src="img/Bonacic_detail.jpg">
+        </div>
+        <h1>Vladimir Bonacic, artista informático y cibernético croata </h1>
+    </header>
+    <article>
+        <p>
+            Nació en 1938 en Novi Sad, Yugoslavia. Creció en Zagreb y estudió electrónica nuclear en la Facultad de Ingeniería Eléctrica y Computación de la Universidad de Zagreb (M. Sc. 1964). Estudios de posgrado en Londres y París. Obtuvo su doctorado en 1967 en el campo del reconocimiento de patrones y estructuras de datos ocultos, en la universidad de Zagreb.
+        </p>
+        <div id="cos">
+        <p>
+            Bonačić trabajó en el Instituto de Investigación Nacional Croata Ruđer Bošković (RBI) en Zagreb desde 1964, donde dirigió el Laboratorio de Cibernética de 1969 a 1973. En 1968 comenzó a utilizar sistemas informáticos para el arte cibernético. En 1970-1972 dirigió el proyecto de investigación "Reconocimiento y procesamiento de patrones" en el RBI. En ese momento también comenzó el desarrollo de "Objeto dinámico controlado por computadora" con el apoyo de la UNESCO; y en 1971 se desempeñó como asesor de la UNESCO en materia de arte y ciencia. Exhibió sus primeros objetos dinámicos dentro de la exposición Nuevas Tendencias en Zagreb en 1969 , en total 17 obras, y luego nuevamente en 1973 . Trabajó junto con Ivan Picelj , y desde 1967 con un diseñador de software.Miro A. Cimerman . Su primera exposición individual tuvo lugar en Ljubljana en 1972.
+        </p>
+        </div>
+        <div class="cercle">
+        <img src="img/vladimir_tabajando.jpg" alt="retrat">
+        </div>
+        <p>
+            Sobre la base de un acuerdo entre el Instituto Ruđer Bošković y la Academia de Ciencias de Israel, Bonačić estableció un equipo de laboratorio para cibernética, bcd , junto con Cimerman y un arquitecto y urbanista Dunja Donassy (1971). En 1972 bcd - el equipo de arte cibernético se mudó a Israel y en 1973 fundó el "Programa de Jerusalén en Arte y Ciencia", un programa de investigación y capacitación para estudios interdisciplinarios de posgrado en arte y ciencia en la Academia de Artes y Diseño de Bezalel en Jerusalén, que Bonačić dirigió hasta 1977, sirviendo como profesor de arte basado en computadora. Para este programa, estableció colaboraciones con la Universidad Hebrea de Jerusalén y el Museo de Israel. Del 3 al 14 de noviembre de 1974 organizó un seminario internacional de Bat Sheva sobreLa Interacción de Arte y Ciencia , en la que participaron varios protagonistas de Nuevas Tendencias, como Jonathan Benthall , Herbert W. Franke , Frank Joseph Malina , Abraham A. Moles , A. Michael Noll y John Whitney . En 1975, Willem Sandberg , un tipógrafo holandés y director del Museo Stedelijk , recibió el Premio Erasmus en Amsterdam. Por recomendación de Sandberg, la mitad del premio se dedicó al "Programa de Jerusalén en Arte y Ciencia".
+        </p>
+        <div class="hexagon">
+        <img src="img/vladimir_byn.jpg" alt="retrat">
+        </div>
+        <p>
+            En 1973 se convirtió en miembro de la junta asesora editorial de la revista Leonardo . 1978/1979 jefe de desarrollo de la biblioteca multimedia y electrónica en la biblioteca nacional de Croacia, Zagreb, y la biblioteca central de la Universidad de Zagreb. Se trasladó a Alemania en 1980, donde realizó proyectos de I + D principalmente en comunicaciones visuales utilizadas por la televisión alemana para la presentación de informes en la noche de las elecciones. Murió en 1999 en Alemania.
+        </p>
+    </article>
+ </body>   
+</html>
